@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BE1107A185DE35D00F29E08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE11079185DE35D00F29E08 /* Foundation.framework */; };
+		0BE1107C185DE35D00F29E08 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE1107B185DE35D00F29E08 /* CoreGraphics.framework */; };
+		0BE1107E185DE35D00F29E08 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE1107D185DE35D00F29E08 /* UIKit.framework */; };
+		0BE11084185DE35D00F29E08 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BE11082185DE35D00F29E08 /* InfoPlist.strings */; };
+		0BE11086185DE35D00F29E08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE11085185DE35D00F29E08 /* main.m */; };
+		0BE1108A185DE35D00F29E08 /* EGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE11089185DE35D00F29E08 /* EGAppDelegate.m */; };
+		0BE1108C185DE35D00F29E08 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BE1108B185DE35D00F29E08 /* Images.xcassets */; };
+		0BE11093185DE35D00F29E08 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE11092185DE35D00F29E08 /* XCTest.framework */; };
+		0BE11094185DE35D00F29E08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE11079185DE35D00F29E08 /* Foundation.framework */; };
+		0BE11095185DE35D00F29E08 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE1107D185DE35D00F29E08 /* UIKit.framework */; };
+		0BE1109D185DE35D00F29E08 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BE1109B185DE35D00F29E08 /* InfoPlist.strings */; };
+		0BE1109F185DE35D00F29E08 /* ForeignNumbersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE1109E185DE35D00F29E08 /* ForeignNumbersTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0BE11096185DE35D00F29E08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BE1106E185DE35D00F29E08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BE11075185DE35D00F29E08;
+			remoteInfo = ForeignNumbers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BE11076185DE35D00F29E08 /* ForeignNumbers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForeignNumbers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BE11079185DE35D00F29E08 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0BE1107B185DE35D00F29E08 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0BE1107D185DE35D00F29E08 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0BE11081185DE35D00F29E08 /* ForeignNumbers-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ForeignNumbers-Info.plist"; sourceTree = "<group>"; };
+		0BE11083185DE35D00F29E08 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0BE11085185DE35D00F29E08 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0BE11087185DE35D00F29E08 /* ForeignNumbers-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ForeignNumbers-Prefix.pch"; sourceTree = "<group>"; };
+		0BE11088185DE35D00F29E08 /* EGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EGAppDelegate.h; sourceTree = "<group>"; };
+		0BE11089185DE35D00F29E08 /* EGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EGAppDelegate.m; sourceTree = "<group>"; };
+		0BE1108B185DE35D00F29E08 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0BE11091185DE35D00F29E08 /* ForeignNumbersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForeignNumbersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BE11092185DE35D00F29E08 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0BE1109A185DE35D00F29E08 /* ForeignNumbersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ForeignNumbersTests-Info.plist"; sourceTree = "<group>"; };
+		0BE1109C185DE35D00F29E08 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0BE1109E185DE35D00F29E08 /* ForeignNumbersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForeignNumbersTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0BE11073185DE35D00F29E08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BE1107C185DE35D00F29E08 /* CoreGraphics.framework in Frameworks */,
+				0BE1107E185DE35D00F29E08 /* UIKit.framework in Frameworks */,
+				0BE1107A185DE35D00F29E08 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BE1108E185DE35D00F29E08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BE11093185DE35D00F29E08 /* XCTest.framework in Frameworks */,
+				0BE11095185DE35D00F29E08 /* UIKit.framework in Frameworks */,
+				0BE11094185DE35D00F29E08 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BE1106D185DE35D00F29E08 = {
+			isa = PBXGroup;
+			children = (
+				0BE1107F185DE35D00F29E08 /* ForeignNumbers */,
+				0BE11098185DE35D00F29E08 /* ForeignNumbersTests */,
+				0BE11078185DE35D00F29E08 /* Frameworks */,
+				0BE11077185DE35D00F29E08 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0BE11077185DE35D00F29E08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BE11076185DE35D00F29E08 /* ForeignNumbers.app */,
+				0BE11091185DE35D00F29E08 /* ForeignNumbersTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0BE11078185DE35D00F29E08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BE11079185DE35D00F29E08 /* Foundation.framework */,
+				0BE1107B185DE35D00F29E08 /* CoreGraphics.framework */,
+				0BE1107D185DE35D00F29E08 /* UIKit.framework */,
+				0BE11092185DE35D00F29E08 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0BE1107F185DE35D00F29E08 /* ForeignNumbers */ = {
+			isa = PBXGroup;
+			children = (
+				0BE11088185DE35D00F29E08 /* EGAppDelegate.h */,
+				0BE11089185DE35D00F29E08 /* EGAppDelegate.m */,
+				0BE1108B185DE35D00F29E08 /* Images.xcassets */,
+				0BE11080185DE35D00F29E08 /* Supporting Files */,
+			);
+			path = ForeignNumbers;
+			sourceTree = "<group>";
+		};
+		0BE11080185DE35D00F29E08 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BE11081185DE35D00F29E08 /* ForeignNumbers-Info.plist */,
+				0BE11082185DE35D00F29E08 /* InfoPlist.strings */,
+				0BE11085185DE35D00F29E08 /* main.m */,
+				0BE11087185DE35D00F29E08 /* ForeignNumbers-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0BE11098185DE35D00F29E08 /* ForeignNumbersTests */ = {
+			isa = PBXGroup;
+			children = (
+				0BE1109E185DE35D00F29E08 /* ForeignNumbersTests.m */,
+				0BE11099185DE35D00F29E08 /* Supporting Files */,
+			);
+			path = ForeignNumbersTests;
+			sourceTree = "<group>";
+		};
+		0BE11099185DE35D00F29E08 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BE1109A185DE35D00F29E08 /* ForeignNumbersTests-Info.plist */,
+				0BE1109B185DE35D00F29E08 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0BE11075185DE35D00F29E08 /* ForeignNumbers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BE110A2185DE35D00F29E08 /* Build configuration list for PBXNativeTarget "ForeignNumbers" */;
+			buildPhases = (
+				0BE11072185DE35D00F29E08 /* Sources */,
+				0BE11073185DE35D00F29E08 /* Frameworks */,
+				0BE11074185DE35D00F29E08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ForeignNumbers;
+			productName = ForeignNumbers;
+			productReference = 0BE11076185DE35D00F29E08 /* ForeignNumbers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0BE11090185DE35D00F29E08 /* ForeignNumbersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BE110A5185DE35D00F29E08 /* Build configuration list for PBXNativeTarget "ForeignNumbersTests" */;
+			buildPhases = (
+				0BE1108D185DE35D00F29E08 /* Sources */,
+				0BE1108E185DE35D00F29E08 /* Frameworks */,
+				0BE1108F185DE35D00F29E08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BE11097185DE35D00F29E08 /* PBXTargetDependency */,
+			);
+			name = ForeignNumbersTests;
+			productName = ForeignNumbersTests;
+			productReference = 0BE11091185DE35D00F29E08 /* ForeignNumbersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0BE1106E185DE35D00F29E08 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EG;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Evan Goodberry";
+				TargetAttributes = {
+					0BE11090185DE35D00F29E08 = {
+						TestTargetID = 0BE11075185DE35D00F29E08;
+					};
+				};
+			};
+			buildConfigurationList = 0BE11071185DE35D00F29E08 /* Build configuration list for PBXProject "ForeignNumbers" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0BE1106D185DE35D00F29E08;
+			productRefGroup = 0BE11077185DE35D00F29E08 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0BE11075185DE35D00F29E08 /* ForeignNumbers */,
+				0BE11090185DE35D00F29E08 /* ForeignNumbersTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0BE11074185DE35D00F29E08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BE11084185DE35D00F29E08 /* InfoPlist.strings in Resources */,
+				0BE1108C185DE35D00F29E08 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BE1108F185DE35D00F29E08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BE1109D185DE35D00F29E08 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BE11072185DE35D00F29E08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BE1108A185DE35D00F29E08 /* EGAppDelegate.m in Sources */,
+				0BE11086185DE35D00F29E08 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BE1108D185DE35D00F29E08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BE1109F185DE35D00F29E08 /* ForeignNumbersTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BE11097185DE35D00F29E08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BE11075185DE35D00F29E08 /* ForeignNumbers */;
+			targetProxy = 0BE11096185DE35D00F29E08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0BE11082185DE35D00F29E08 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BE11083185DE35D00F29E08 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0BE1109B185DE35D00F29E08 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BE1109C185DE35D00F29E08 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0BE110A0185DE35D00F29E08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0BE110A1185DE35D00F29E08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0BE110A3185DE35D00F29E08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ForeignNumbers/ForeignNumbers-Prefix.pch";
+				INFOPLIST_FILE = "ForeignNumbers/ForeignNumbers-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0BE110A4185DE35D00F29E08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ForeignNumbers/ForeignNumbers-Prefix.pch";
+				INFOPLIST_FILE = "ForeignNumbers/ForeignNumbers-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0BE110A6185DE35D00F29E08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ForeignNumbers.app/ForeignNumbers";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ForeignNumbers/ForeignNumbers-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ForeignNumbersTests/ForeignNumbersTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0BE110A7185DE35D00F29E08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ForeignNumbers.app/ForeignNumbers";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ForeignNumbers/ForeignNumbers-Prefix.pch";
+				INFOPLIST_FILE = "ForeignNumbersTests/ForeignNumbersTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BE11071185DE35D00F29E08 /* Build configuration list for PBXProject "ForeignNumbers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BE110A0185DE35D00F29E08 /* Debug */,
+				0BE110A1185DE35D00F29E08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BE110A2185DE35D00F29E08 /* Build configuration list for PBXNativeTarget "ForeignNumbers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BE110A3185DE35D00F29E08 /* Debug */,
+				0BE110A4185DE35D00F29E08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0BE110A5185DE35D00F29E08 /* Build configuration list for PBXNativeTarget "ForeignNumbersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BE110A6185DE35D00F29E08 /* Debug */,
+				0BE110A7185DE35D00F29E08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0BE1106E185DE35D00F29E08 /* Project object */;
+}
