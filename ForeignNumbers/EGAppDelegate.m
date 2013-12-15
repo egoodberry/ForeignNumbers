@@ -7,6 +7,7 @@
 //
 
 #import "EGAppDelegate.h"
+@class EGMainViewController;
 
 @implementation EGAppDelegate
 
@@ -15,6 +16,11 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    EGMainViewController *mainViewController = [[EGMainViewController alloc] initWithNibName:@"EGMainViewController" bundle: nil];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController: mainViewController];
+    
+    self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     return YES;
 }

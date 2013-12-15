@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EGMainViewController.h"
 
 @interface EGAppDelegate : UIResponder <UIApplicationDelegate>
 

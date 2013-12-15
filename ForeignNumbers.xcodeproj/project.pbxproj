@@ -17,8 +17,10 @@
 		0BE11093185DE35D00F29E08 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE11092185DE35D00F29E08 /* XCTest.framework */; };
 		0BE11094185DE35D00F29E08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE11079185DE35D00F29E08 /* Foundation.framework */; };
 		0BE11095185DE35D00F29E08 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE1107D185DE35D00F29E08 /* UIKit.framework */; };
-		0BE1109D185DE35D00F29E08 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BE1109B185DE35D00F29E08 /* InfoPlist.strings */; };
-		0BE1109F185DE35D00F29E08 /* ForeignNumbersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE1109E185DE35D00F29E08 /* ForeignNumbersTests.m */; };
+		0BE110AB185DE93900F29E08 /* EGMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE110A9185DE93900F29E08 /* EGMainViewController.m */; };
+		0BE110AC185DE93900F29E08 /* EGMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BE110AA185DE93900F29E08 /* EGMainViewController.xib */; };
+		0BE110B1185E2A8700F29E08 /* EGVoice.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE110B0185E2A8700F29E08 /* EGVoice.m */; };
+		0BE110B4185E2B6000F29E08 /* EGNumberGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE110B3185E2B6000F29E08 /* EGNumberGenerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,9 +47,13 @@
 		0BE1108B185DE35D00F29E08 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0BE11091185DE35D00F29E08 /* ForeignNumbersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForeignNumbersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BE11092185DE35D00F29E08 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		0BE1109A185DE35D00F29E08 /* ForeignNumbersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ForeignNumbersTests-Info.plist"; sourceTree = "<group>"; };
-		0BE1109C185DE35D00F29E08 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0BE1109E185DE35D00F29E08 /* ForeignNumbersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForeignNumbersTests.m; sourceTree = "<group>"; };
+		0BE110A8185DE93900F29E08 /* EGMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGMainViewController.h; sourceTree = "<group>"; };
+		0BE110A9185DE93900F29E08 /* EGMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGMainViewController.m; sourceTree = "<group>"; };
+		0BE110AA185DE93900F29E08 /* EGMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EGMainViewController.xib; sourceTree = "<group>"; };
+		0BE110AF185E2A8700F29E08 /* EGVoice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGVoice.h; sourceTree = "<group>"; };
+		0BE110B0185E2A8700F29E08 /* EGVoice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGVoice.m; sourceTree = "<group>"; };
+		0BE110B2185E2B6000F29E08 /* EGNumberGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGNumberGenerator.h; sourceTree = "<group>"; };
+		0BE110B3185E2B6000F29E08 /* EGNumberGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGNumberGenerator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				0BE1107F185DE35D00F29E08 /* ForeignNumbers */,
-				0BE11098185DE35D00F29E08 /* ForeignNumbersTests */,
 				0BE11078185DE35D00F29E08 /* Frameworks */,
 				0BE11077185DE35D00F29E08 /* Products */,
 			);
@@ -107,6 +112,8 @@
 		0BE1107F185DE35D00F29E08 /* ForeignNumbers */ = {
 			isa = PBXGroup;
 			children = (
+				0BE110AE185E2A1600F29E08 /* ViewControllers */,
+				0BE110AD185E2A0A00F29E08 /* Models */,
 				0BE11088185DE35D00F29E08 /* EGAppDelegate.h */,
 				0BE11089185DE35D00F29E08 /* EGAppDelegate.m */,
 				0BE1108B185DE35D00F29E08 /* Images.xcassets */,
@@ -126,22 +133,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0BE11098185DE35D00F29E08 /* ForeignNumbersTests */ = {
+		0BE110AD185E2A0A00F29E08 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0BE1109E185DE35D00F29E08 /* ForeignNumbersTests.m */,
-				0BE11099185DE35D00F29E08 /* Supporting Files */,
+				0BE110AF185E2A8700F29E08 /* EGVoice.h */,
+				0BE110B0185E2A8700F29E08 /* EGVoice.m */,
+				0BE110B2185E2B6000F29E08 /* EGNumberGenerator.h */,
+				0BE110B3185E2B6000F29E08 /* EGNumberGenerator.m */,
 			);
-			path = ForeignNumbersTests;
+			name = Models;
 			sourceTree = "<group>";
 		};
-		0BE11099185DE35D00F29E08 /* Supporting Files */ = {
+		0BE110AE185E2A1600F29E08 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0BE1109A185DE35D00F29E08 /* ForeignNumbersTests-Info.plist */,
-				0BE1109B185DE35D00F29E08 /* InfoPlist.strings */,
+				0BE110A8185DE93900F29E08 /* EGMainViewController.h */,
+				0BE110A9185DE93900F29E08 /* EGMainViewController.m */,
+				0BE110AA185DE93900F29E08 /* EGMainViewController.xib */,
 			);
-			name = "Supporting Files";
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +232,7 @@
 			files = (
 				0BE11084185DE35D00F29E08 /* InfoPlist.strings in Resources */,
 				0BE1108C185DE35D00F29E08 /* Images.xcassets in Resources */,
+				0BE110AC185DE93900F29E08 /* EGMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +240,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BE1109D185DE35D00F29E08 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +251,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BE1108A185DE35D00F29E08 /* EGAppDelegate.m in Sources */,
+				0BE110AB185DE93900F29E08 /* EGMainViewController.m in Sources */,
+				0BE110B1185E2A8700F29E08 /* EGVoice.m in Sources */,
 				0BE11086185DE35D00F29E08 /* main.m in Sources */,
+				0BE110B4185E2B6000F29E08 /* EGNumberGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BE1109F185DE35D00F29E08 /* ForeignNumbersTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,14 +280,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BE11083185DE35D00F29E08 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		0BE1109B185DE35D00F29E08 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0BE1109C185DE35D00F29E08 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
