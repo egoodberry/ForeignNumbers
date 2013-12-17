@@ -15,6 +15,8 @@
 }
 
 @property (strong, nonatomic) NSString* language;
+@property (nonatomic) float speed;
+
 - (void)speak: (NSString*)speech;
 
 @end

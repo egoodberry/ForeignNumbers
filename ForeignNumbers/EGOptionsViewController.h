@@ -12,14 +12,16 @@
 
 @interface EGOptionsViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
-@property (nonatomic, strong) EGVoice *voice;
-@property (nonatomic, strong) EGNumberGenerator *numberGenerator;
-@property (nonatomic, strong) NSArray *voices;
+@property (strong, nonatomic) EGVoice *voice;
+@property (strong, nonatomic) EGNumberGenerator *numberGenerator;
+@property (strong, nonatomic) NSArray *voices;
 
-@property (nonatomic, strong) IBOutlet UIPickerView *languagePicker;
+@property (strong, nonatomic) IBOutlet UIPickerView *languagePicker;
 @property (strong, nonatomic) IBOutlet UISlider *maximumSlider;
 @property (strong, nonatomic) IBOutlet UILabel *maximumLabel;
+@property (strong, nonatomic) IBOutlet UISlider *speedSlider;
 
 - (IBAction)maximumChanged:(id)sender;
+- (IBAction)speedChanged:(id)sender;
 
 @end

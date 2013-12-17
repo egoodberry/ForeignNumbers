@@ -15,6 +15,7 @@
     if (self = [super init]) {
         _synthesizer = [[AVSpeechSynthesizer alloc] init];
         _language = @"fr-FR";
+        _speed = 0.5f;
     }
     return self;
 }
@@ -23,6 +24,7 @@
     NSLog(@"%@", speech);
     AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString: speech];
     utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage: _language];
+    utterance.rate = _speed;
     [_synthesizer speakUtterance: utterance];
 }
 

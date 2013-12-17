@@ -27,6 +27,7 @@
     _voices = [AVSpeechSynthesisVoice speechVoices];
     [self selectCurrentLanguage];
     [self setCurrentMaximum];
+    [self setSpeed];
 }
 
 - (void)selectCurrentLanguage {
@@ -47,9 +48,18 @@
     [self.maximumLabel setText: [[NSString alloc] initWithFormat: @"%i", _numberGenerator.maximum]];
 }
 
+- (void)setSpeed {
+    NSLog(@"%f", _voice.speed);
+   [self.speedSlider setValue: _voice.speed];
+}
+
 - (IBAction)maximumChanged:(UISlider*)slider {
     self.numberGenerator.maximum = (int) [slider value];
     [self updateMaximumLabel];
+}
+
+- (IBAction)speedChanged:(UISlider*)slider {
+    self.voice.speed = [slider value];
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView*)pickerView {
