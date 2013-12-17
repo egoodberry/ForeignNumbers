@@ -85,7 +85,7 @@
         alert = [alert init];
         alert.title = @"No.";
         alert.message = @"Incorrect.";
-        [alert addButtonWithTitle: @"Try again!"];
+        [alert addButtonWithTitle: @"Wait, wait, I got it!"];
     }
     
     [alert show];
@@ -95,6 +95,9 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (buttonIndex == 1) { // Another!
         [self speakNewNumber];
+    }
+    else {
+        [self resetForm];
     }
 }
 
