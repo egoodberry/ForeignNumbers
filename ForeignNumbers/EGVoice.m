@@ -14,13 +14,14 @@
 - (id) init {
     if (self = [super init]) {
         _synthesizer = [[AVSpeechSynthesizer alloc] init];
+        _language = @"fr-FR";
     }
     return self;
 }
 
 - (void)speak: (NSString*)speech {
     AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString: speech];
-    utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage: @"fr-FR"];
+    utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage: _language];
     [_synthesizer speakUtterance: utterance];
 }
 

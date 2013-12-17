@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "EGMainViewController.h"
 
-@interface EGAppDelegate : UIResponder <UIApplicationDelegate>
+@interface EGAppDelegate : UIResponder <UIApplicationDelegate> {
+    UINavigationController *_navController;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

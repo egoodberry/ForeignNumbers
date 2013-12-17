@@ -14,6 +14,7 @@
     AVSpeechSynthesizer* _synthesizer;
 }
 
+@property (strong, nonatomic) NSString* language;
 - (void)speak: (NSString*)speech;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "EGMainViewController.h"
+#import "EGOptionsViewController.h"
 
 @implementation EGMainViewController
 
@@ -20,23 +21,17 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    
-    // Do any additional setup after loading the view from its nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (IBAction)newNumberPressed {
     _currentAnswer = [_numberGenerator generate];
     [_voice speak: _currentAnswer];
+}
+
+- (IBAction)optionsPressed {
+    EGOptionsViewController *optionsViewController = [[EGOptionsViewController alloc] initWithNibName:@"EGOptionsViewController" bundle:[NSBundle mainBundle]];
+    [optionsViewController.navigationItem setTitle: @"Options"];
+    optionsViewController.numberGenerator = _numberGenerator;
+    optionsViewController.voice = _voice;
+    [self.navigationController pushViewController:optionsViewController animated:YES];
 }
 
 @end

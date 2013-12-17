@@ -21,6 +21,8 @@
 		0BE110AC185DE93900F29E08 /* EGMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BE110AA185DE93900F29E08 /* EGMainViewController.xib */; };
 		0BE110B1185E2A8700F29E08 /* EGVoice.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE110B0185E2A8700F29E08 /* EGVoice.m */; };
 		0BE110B4185E2B6000F29E08 /* EGNumberGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE110B3185E2B6000F29E08 /* EGNumberGenerator.m */; };
+		0BE110B8185E2D7200F29E08 /* EGOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE110B6185E2D7200F29E08 /* EGOptionsViewController.m */; };
+		0BE110B9185E2D7200F29E08 /* EGOptionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BE110B7185E2D7200F29E08 /* EGOptionsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,9 @@
 		0BE110B0185E2A8700F29E08 /* EGVoice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGVoice.m; sourceTree = "<group>"; };
 		0BE110B2185E2B6000F29E08 /* EGNumberGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGNumberGenerator.h; sourceTree = "<group>"; };
 		0BE110B3185E2B6000F29E08 /* EGNumberGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGNumberGenerator.m; sourceTree = "<group>"; };
+		0BE110B5185E2D7200F29E08 /* EGOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOptionsViewController.h; sourceTree = "<group>"; };
+		0BE110B6185E2D7200F29E08 /* EGOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOptionsViewController.m; sourceTree = "<group>"; };
+		0BE110B7185E2D7200F29E08 /* EGOptionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EGOptionsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +155,9 @@
 				0BE110A8185DE93900F29E08 /* EGMainViewController.h */,
 				0BE110A9185DE93900F29E08 /* EGMainViewController.m */,
 				0BE110AA185DE93900F29E08 /* EGMainViewController.xib */,
+				0BE110B5185E2D7200F29E08 /* EGOptionsViewController.h */,
+				0BE110B6185E2D7200F29E08 /* EGOptionsViewController.m */,
+				0BE110B7185E2D7200F29E08 /* EGOptionsViewController.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -233,6 +241,7 @@
 				0BE11084185DE35D00F29E08 /* InfoPlist.strings in Resources */,
 				0BE1108C185DE35D00F29E08 /* Images.xcassets in Resources */,
 				0BE110AC185DE93900F29E08 /* EGMainViewController.xib in Resources */,
+				0BE110B9185E2D7200F29E08 /* EGOptionsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +262,7 @@
 				0BE1108A185DE35D00F29E08 /* EGAppDelegate.m in Sources */,
 				0BE110AB185DE93900F29E08 /* EGMainViewController.m in Sources */,
 				0BE110B1185E2A8700F29E08 /* EGVoice.m in Sources */,
+				0BE110B8185E2D7200F29E08 /* EGOptionsViewController.m in Sources */,
 				0BE11086185DE35D00F29E08 /* main.m in Sources */,
 				0BE110B4185E2B6000F29E08 /* EGNumberGenerator.m in Sources */,
 			);
@@ -446,6 +456,7 @@
 				0BE110A4185DE35D00F29E08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0BE110A5185DE35D00F29E08 /* Build configuration list for PBXNativeTarget "ForeignNumbersTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +465,7 @@
 				0BE110A7185DE35D00F29E08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -17,5 +17,6 @@
 }
 
 - (IBAction)newNumberPressed;
+- (IBAction)optionsPressed;
 
 @end
