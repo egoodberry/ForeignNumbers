@@ -35,7 +35,7 @@
     self.answerInput.inputAccessoryView = numberToolbar;
 }
 
-- (void) cancelNumberPad {
+- (void)cancelNumberPad {
     [self clearAnswer];
     [self.answerInput resignFirstResponder];
 }
@@ -43,21 +43,23 @@
 - (IBAction)newNumberPressed {
     [self speakNewNumber];
     self.repeatButton.enabled = true;
+    self.giveUpButton.enabled = true;
     self.answerInput.enabled = true;
 }
 
-- (void)speakNewNumber {
-    [self clearAnswer];
-    _currentAnswer = [_numberGenerator generate];
-    [_voice speak: _currentAnswer];
-}
-
-- (void)clearAnswer {
-    self.answerInput.text = @"";
-}
 
 - (IBAction)repeatPressed {
-    [_voice speak: _currentAnswer];
+    [self speakCurrentAnswer];
+}
+
+- (IBAction)giveUpPressed {
+    UIAlertView* alert = [[UIAlertView alloc] init];
+    alert.title = @"You gave up!";
+    alert.message = [[NSString alloc] initWithFormat: @"The correct answer was %@.", _currentAnswer];
+    [alert addButtonWithTitle: @"Well, I'm embarrassed."];
+    [alert show];
+    
+    [self resetForm];
 }
 
 - (IBAction)optionsPressed {
@@ -72,7 +74,7 @@
     [self submitAnswer];
 }
 
-- (void) submitAnswer {
+- (void)submitAnswer {
     NSString *answer = [self.answerInput text];
     UIAlertView* alert = [UIAlertView alloc];
 
@@ -90,10 +92,31 @@
     [self.answerInput resignFirstResponder];
 }
 
-- (void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (buttonIndex == 1) { // Another!
         [self speakNewNumber];
     }
+}
+
+- (void)speakNewNumber {
+    [self clearAnswer];
+    _currentAnswer = [_numberGenerator generate];
+    [self speakCurrentAnswer];
+}
+
+- (void)clearAnswer {
+    self.answerInput.text = @"";
+}
+
+- (void)speakCurrentAnswer {
+    [_voice speak: _currentAnswer];
+}
+
+- (void)resetForm {
+    self.repeatButton.enabled = false;
+    self.giveUpButton.enabled = false;
+    self.answerInput.enabled = false;
+    [self clearAnswer];
 }
 
 @end

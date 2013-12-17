@@ -17,9 +17,11 @@
 }
 
 @property (strong, nonatomic) IBOutlet UIButton *repeatButton;
+@property (strong, nonatomic) IBOutlet UIButton *giveUpButton;
 @property (strong, nonatomic) IBOutlet UITextField *answerInput;
 
 - (IBAction)newNumberPressed;
+- (IBAction)giveUpPressed;
 - (IBAction)repeatPressed;
 - (IBAction)optionsPressed;
 
