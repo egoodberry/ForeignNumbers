@@ -29,7 +29,7 @@
     numberToolbar.items = [NSArray arrayWithObjects:[
     [UIBarButtonItem alloc] initWithTitle:@"Cancel" style:UIBarButtonItemStyleBordered target:self action:@selector(cancelNumberPad)],
     [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil],
-    [[UIBarButtonItem alloc] initWithTitle: @"Apply" style: UIBarButtonSystemItemDone target:self action:@selector(doneWithNumberPad)],
+    [[UIBarButtonItem alloc] initWithTitle: @"Submit" style: UIBarButtonSystemItemDone target:self action:@selector(submitAnswer)],
     nil
     ];
     [numberToolbar sizeToFit];
@@ -39,10 +39,6 @@
 - (void) cancelNumberPad {
     self.answerInput.text = @"";
     [self.answerInput resignFirstResponder];
-}
-
-- (void) doneWithNumberPad {
-    [self submit];
 }
 
 - (IBAction)newNumberPressed {
@@ -64,21 +60,11 @@
     [self.navigationController pushViewController:optionsViewController animated:YES];
 }
 
-- (IBAction)answerChanged:(id)sender {
-    NSString *answer = [((UITextField*)sender) text];
-    if ([answer isEqualToString: @""]) {
-        self.submitButton.enabled = false;
-    }
-    else {
-        self.submitButton.enabled = true;
-    }
-}
-
 - (IBAction)submitPressed:(id)sender {
-    [self submit];
+    [self submitAnswer];
 }
 
-- (void) submit {
+- (void) submitAnswer {
     NSString *answer = [self.answerInput text];
     UIAlertView* alert = [[UIAlertView alloc] init];
     

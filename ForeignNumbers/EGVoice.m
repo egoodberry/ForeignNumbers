@@ -20,6 +20,7 @@
 }
 
 - (void)speak: (NSString*)speech {
+    NSLog(@"%@", speech);
     AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString: speech];
     utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage: _language];
     [_synthesizer speakUtterance: utterance];

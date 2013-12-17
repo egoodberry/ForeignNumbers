@@ -18,12 +18,9 @@
 
 @property (strong, nonatomic) IBOutlet UIButton *repeatButton;
 @property (strong, nonatomic) IBOutlet UITextField *answerInput;
-@property (strong, nonatomic) IBOutlet UIButton *submitButton;
 
 - (IBAction)newNumberPressed;
 - (IBAction)repeatPressed;
 - (IBAction)optionsPressed;
-- (IBAction)answerChanged:(id)sender;
-- (IBAction)submitPressed:(id)sender;
 
 @end
