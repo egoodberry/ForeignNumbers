@@ -24,6 +24,11 @@
 - (IBAction)newNumberPressed {
     _currentAnswer = [_numberGenerator generate];
     [_voice speak: _currentAnswer];
+    self.repeatButton.enabled = true;
+}
+
+- (IBAction)repeatPressed {
+    [_voice speak: _currentAnswer];
 }
 
 - (IBAction)optionsPressed {

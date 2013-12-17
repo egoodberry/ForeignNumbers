@@ -16,7 +16,10 @@
     NSString *_currentAnswer;
 }
 
+@property (strong, nonatomic) IBOutlet UIButton *repeatButton;
+
 - (IBAction)newNumberPressed;
+- (IBAction)repeatPressed;
 - (IBAction)optionsPressed;
 
 @end

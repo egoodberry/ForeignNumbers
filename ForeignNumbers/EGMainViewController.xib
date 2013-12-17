@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EGMainViewController">
             <connections>
+                <outlet property="repeatButton" destination="8Zo-xq-iQl" id="ibt-XY-KXq"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -15,8 +16,9 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czF-Jp-GTV">
-                    <rect key="frame" x="109" y="120" width="102" height="30"/>
+                    <rect key="frame" x="81" y="99" width="158" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
                     <state key="normal" title="New Number!">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -25,13 +27,23 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cgh-wb-8RJ">
-                    <rect key="frame" x="126" y="384" width="68" height="30"/>
+                    <rect key="frame" x="126" y="388" width="68" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Options">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="optionsPressed" destination="-1" eventType="touchUpInside" id="9hU-WI-fQt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zo-xq-iQl">
+                    <rect key="frame" x="132" y="129" width="57" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Repeat">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="repeatPressed" destination="-1" eventType="touchUpInside" id="0Q2-Dd-BhV"/>
                     </connections>
                 </button>
             </subviews>
