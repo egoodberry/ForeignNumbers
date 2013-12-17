@@ -10,7 +10,7 @@
 #import "EGVoice.h"
 #import "EGNumberGenerator.h"
 
-@interface EGMainViewController : UIViewController {
+@interface EGMainViewController : UIViewController <UIAlertViewDelegate> {
     EGVoice *_voice;
     EGNumberGenerator *_numberGenerator;
     NSString *_currentAnswer;

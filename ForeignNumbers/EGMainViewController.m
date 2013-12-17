@@ -36,15 +36,24 @@
 }
 
 - (void) cancelNumberPad {
-    self.answerInput.text = @"";
+    [self clearAnswer];
     [self.answerInput resignFirstResponder];
 }
 
 - (IBAction)newNumberPressed {
-    _currentAnswer = [_numberGenerator generate];
-    [_voice speak: _currentAnswer];
+    [self speakNewNumber];
     self.repeatButton.enabled = true;
     self.answerInput.enabled = true;
+}
+
+- (void)speakNewNumber {
+    [self clearAnswer];
+    _currentAnswer = [_numberGenerator generate];
+    [_voice speak: _currentAnswer];
+}
+
+- (void)clearAnswer {
+    self.answerInput.text = @"";
 }
 
 - (IBAction)repeatPressed {
@@ -65,14 +74,13 @@
 
 - (void) submitAnswer {
     NSString *answer = [self.answerInput text];
-    UIAlertView* alert = [[UIAlertView alloc] init];
-    
+    UIAlertView* alert = [UIAlertView alloc];
+
     if ([answer isEqualToString: _currentAnswer]) {
-        alert.title = @"YES!";
-        alert.message = @"Correct!";
-        [alert addButtonWithTitle: @"Another!"];
+        alert = [alert initWithTitle:@"YES!" message:@"Correct!" delegate:self cancelButtonTitle:@"Pfew. I'm done." otherButtonTitles:@"Another!", nil];
     }
     else {
+        alert = [alert init];
         alert.title = @"No.";
         alert.message = @"Incorrect.";
         [alert addButtonWithTitle: @"Try again!"];
@@ -80,6 +88,12 @@
     
     [alert show];
     [self.answerInput resignFirstResponder];
+}
+
+- (void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 1) { // Another!
+        [self speakNewNumber];
+    }
 }
 
 @end
