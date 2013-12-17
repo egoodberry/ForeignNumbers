@@ -18,6 +18,7 @@
 
 @property (nonatomic, strong) IBOutlet UIPickerView *languagePicker;
 @property (strong, nonatomic) IBOutlet UISlider *maximumSlider;
+@property (strong, nonatomic) IBOutlet UILabel *maximumLabel;
 
 - (IBAction)maximumChanged:(id)sender;
 

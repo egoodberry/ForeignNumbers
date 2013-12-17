@@ -7,6 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EGOptionsViewController">
             <connections>
                 <outlet property="languagePicker" destination="3dp-UU-MOs" id="Kkm-ir-GLG"/>
+                <outlet property="maximumLabel" destination="0iq-eP-P2r" id="rNS-0M-CMS"/>
                 <outlet property="maximumSlider" destination="nz8-ud-7ug" id="WaD-Hl-ejP"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
@@ -24,7 +25,7 @@
                     </connections>
                 </slider>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Maximum" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MtM-gt-G8f">
-                    <rect key="frame" x="20" y="195" width="192" height="21"/>
+                    <rect key="frame" x="20" y="195" width="85" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="highlightedColor"/>
@@ -37,6 +38,12 @@
                         <outlet property="delegate" destination="-1" id="Xx2-6j-EtL"/>
                     </connections>
                 </pickerView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0iq-eP-P2r">
+                    <rect key="frame" x="120" y="195" width="42" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
