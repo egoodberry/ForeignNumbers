@@ -8,6 +8,7 @@
 
 #import <AVFoundation/AVSpeechSynthesis.h>
 #import "EGOptionsViewController.h"
+#import "EGUserDefaults.h"
 #import "EGNumberGenerator.h"
 #import "EGVoice.h"
 
@@ -49,17 +50,20 @@
 }
 
 - (void)setSpeed {
-    NSLog(@"%f", _voice.speed);
    [self.speedSlider setValue: _voice.speed];
 }
 
 - (IBAction)maximumChanged:(UISlider*)slider {
-    self.numberGenerator.maximum = (int) [slider value];
+    int maximum = (int) [slider value];
+    self.numberGenerator.maximum = maximum;
     [self updateMaximumLabel];
+    [EGUserDefaults setMaximum: maximum];
 }
 
 - (IBAction)speedChanged:(UISlider*)slider {
-    self.voice.speed = [slider value];
+    float speed = [slider value];
+    self.voice.speed = speed;
+    [EGUserDefaults setSpeed:speed];
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView*)pickerView {
@@ -78,6 +82,7 @@
 - (void)pickerView:(UIPickerView*)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     AVSpeechSynthesisVoice *voice = _voices[row];
     _voice.language = voice.language;
+    [EGUserDefaults setLanguage: voice.language];
 }
 
 @end

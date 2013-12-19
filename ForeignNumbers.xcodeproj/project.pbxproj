@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B04A5D61862078800BE8EB7 /* EGUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B04A5D51862078800BE8EB7 /* EGUserDefaults.m */; };
 		0BE1107A185DE35D00F29E08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE11079185DE35D00F29E08 /* Foundation.framework */; };
 		0BE1107C185DE35D00F29E08 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE1107B185DE35D00F29E08 /* CoreGraphics.framework */; };
 		0BE1107E185DE35D00F29E08 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE1107D185DE35D00F29E08 /* UIKit.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B04A5D41862078800BE8EB7 /* EGUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGUserDefaults.h; sourceTree = "<group>"; };
+		0B04A5D51862078800BE8EB7 /* EGUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGUserDefaults.m; sourceTree = "<group>"; };
 		0BE11076185DE35D00F29E08 /* ForeignNumbers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForeignNumbers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BE11079185DE35D00F29E08 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0BE1107B185DE35D00F29E08 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -145,6 +148,8 @@
 				0BE110B0185E2A8700F29E08 /* EGVoice.m */,
 				0BE110B2185E2B6000F29E08 /* EGNumberGenerator.h */,
 				0BE110B3185E2B6000F29E08 /* EGNumberGenerator.m */,
+				0B04A5D41862078800BE8EB7 /* EGUserDefaults.h */,
+				0B04A5D51862078800BE8EB7 /* EGUserDefaults.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 				0BE1108A185DE35D00F29E08 /* EGAppDelegate.m in Sources */,
 				0BE110AB185DE93900F29E08 /* EGMainViewController.m in Sources */,
 				0BE110B1185E2A8700F29E08 /* EGVoice.m in Sources */,
+				0B04A5D61862078800BE8EB7 /* EGUserDefaults.m in Sources */,
 				0BE110B8185E2D7200F29E08 /* EGOptionsViewController.m in Sources */,
 				0BE11086185DE35D00F29E08 /* main.m in Sources */,
 				0BE110B4185E2B6000F29E08 /* EGNumberGenerator.m in Sources */,

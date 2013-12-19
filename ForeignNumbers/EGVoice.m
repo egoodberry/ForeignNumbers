@@ -8,14 +8,15 @@
 
 #import "EGVoice.h"
 #import <AVFoundation/AVSpeechSynthesis.h>
+#import "EGUserDefaults.h"
 
 @implementation EGVoice
 
 - (id) init {
     if (self = [super init]) {
         _synthesizer = [[AVSpeechSynthesizer alloc] init];
-        _language = @"fr-FR";
-        _speed = 0.5f;
+        _language = [EGUserDefaults language];
+        _speed = [EGUserDefaults speed];
     }
     return self;
 }

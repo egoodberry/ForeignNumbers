@@ -7,12 +7,13 @@
 //
 
 #import "EGNumberGenerator.h"
+#import "EGUserDefaults.h"
 
 @implementation EGNumberGenerator
 
 -(id) init {
     if (self = [super init]) {
-        _maximum = 1000;
+        _maximum = [EGUserDefaults maximum];
     }
     return self;
 }
